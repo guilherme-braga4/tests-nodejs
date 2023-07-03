@@ -1,4 +1,4 @@
-const mathSalary = (hours: number, hourSalary: number): number => {
+export const mathSalary = (hours: number, hourSalary: number): number => {
   const result = hours * hourSalary;
   return result;
 };

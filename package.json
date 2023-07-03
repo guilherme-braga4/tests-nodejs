@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "npx nodemon",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,15 @@
   },
   "homepage": "https://github.com/guilherme-braga4/tests-nodejs#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.2",
     "jest": "^29.5.0",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "babel-jest": "^29.5.0",
+    "ts-jest": "^29.1.1"
   }
 }
